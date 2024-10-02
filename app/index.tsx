@@ -53,6 +53,11 @@ export default function Index() {
 
        {/* use react-native-modal */}
 
+       <Text className="bg-black text-yellow-500" 
+      //  style={{
+      //   backgroundColor : "green"
+      //  }}
+       >Jaydip Dhananjay Jadhav</Text>
 
       <Button title="click" onPress={() => setvisiable(!visiable)}/>
         
