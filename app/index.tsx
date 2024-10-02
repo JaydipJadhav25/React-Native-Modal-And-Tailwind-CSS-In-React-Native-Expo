@@ -11,42 +11,45 @@ export default function Index() {
       style={{
         flex: 1,
         justifyContent : "center",
-        alignItems : "center"
+        alignItems : "center",
+        backgroundColor  : "yellow"
 
       }}
     >
-      <Button title="click" onPress={() => setvisiable(!visiable)}/>
+     <View style={{ backgroundColor : "red" , width : 100 , height : 80 , justifyContent : "center" }}> 
+      <Text>Jaydip Dhananjay Jadhav </Text>
       
-      <Modal visible={visiable}
-      style={{
-        backgroundColor : "yellow"
-      }}
-      animationType="slide"
+      <Button title="click" onPress={() => setvisiable(!visiable)}/>
+
+     </View>
+
+
+     {/* model */}
+
+     <Modal  visible={visiable}  animationType="slide" 
+    //  transparent
       >
 
-        <View style={{
-          // backgroundColor : "red",
-          width  :500,
-          height : 300,
-          flex :1,
-          justifyContent : 'flex-end',
-          gap : 20
-        }}>
-
+       <View
+        style={{
+          flex: 1,
+          justifyContent : "center",
+          alignItems : "center",
+          backgroundColor  : "orange"
+  
+        }}
+       >
+       <View style={{ backgroundColor : "green" , width : 200 , height : 80 , justifyContent : "center" }}> 
+      <Text>Welcome </Text>
+      
       <Button title="click" onPress={() => setvisiable(!visiable)}/>
 
-          <View
-          style ={{
-            backgroundColor : "blue",
-            width  :500,
-            height : 300,
-            // margin : 60,
-            borderRadius : 50
-            
-          }}
-          />
-        </View>
-      </Modal>
+     </View>
+       </View>
+         
+        </Modal>
+      
+
     </View>
   );
 }
