@@ -1,3 +1,4 @@
+import { router } from "expo-router";
 import { useState } from "react";
 import { Text, View ,  Button } from "react-native";
 import {ReactNativeModal} from "react-native-modal";
@@ -60,6 +61,11 @@ export default function Index() {
        >Jaydip Dhananjay Jadhav</Text>
 
       <Button title="click" onPress={() => setvisiable(!visiable)}/>
+      <Button title="Blur View" onPress={() => {
+        return(
+          router.push("/blurview")
+        )
+      }}/>
         
       <ReactNativeModal isVisible={visiable} 
       animationIn={"shake"}
